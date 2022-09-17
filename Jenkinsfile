@@ -82,8 +82,6 @@ pipeline {
 		    steps {
 		        sh 'docker run --rm -i nablac0d3/sslyze:5.0.0  65.2.4.199:8443 --json_out=results.json || true'
 		    }
-	    }
-    }
-}
+	     }
+	   }
   }
-}
