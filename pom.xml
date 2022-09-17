@@ -4,7 +4,7 @@
     <groupId>com.tna</groupId>
     <artifactId>CRUDlets</artifactId>
     <version>1.0</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <dependencies>
         <dependency>
             <groupId>mysql</groupId>
