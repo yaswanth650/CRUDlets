@@ -66,7 +66,7 @@ pipeline {
      stage ('DAST') {
        steps {
           sshagent(['zap']) {
-            sh 'ssh -o  StrictHostKeyChecking=no ubuntu@3.111.34.165 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://65.2.4.199:8443/CRUDlets/" || true'
+            sh 'ssh -o  StrictHostKeyChecking=no ubuntu@3.111.34.165 "docker run -t owasp/zap2docker-stable zap-baseline.py -t https://65.2.4.199:8443/CRUDlets/" || true'
         }
       }
     }
